@@ -7,7 +7,7 @@ function QuestionSection({ selectedTopic }) {
     // Function to fetch a new question based on the selected topic
     const fetchQuestion = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/questions/${selectedTopic}`);
+            const response = await axios.get(`https://coding-coliseum-ea22a24d29a8.herokuapp.com/api/questions/${selectedTopic}`);
             setQuestion(response.data.question);
         } catch (error) {
             console.error("Error fetching question:", error);
