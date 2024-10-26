@@ -1,25 +1,57 @@
+/* App.css */
+
 .App {
-  text-align: center;
+  display: flex;
   font-family: Arial, sans-serif;
-  padding: 50px;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 8px 0;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.sidebar li:hover {
+  text-decoration: underline;
+}
+
+.question-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.question-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 button {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 1em;
   cursor: pointer;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
-  margin-top: 20px;
 }
 
 button:hover {
   background-color: #0056b3;
-}
-
-p {
-  font-size: 1.2em;
-  margin: 20px 0;
 }
